@@ -11,9 +11,8 @@ function redirect(http)
 
 function download(http)
 {
-
-	try
-	{
+//	try
+//	{
 	var fileData = http.data;
 	var filename = http.name;
 	var filemimetype = http.mimetype;
@@ -55,11 +54,11 @@ function download(http)
 	  }	
 
      	//redirect(http)
-	}
-	catch(err)
-	{
-	 document.write("Unable to download file")
-	}
+//	}
+//	catch(err)
+//	{
+//	 document.write(err)
+//	}
 	
 }
 
