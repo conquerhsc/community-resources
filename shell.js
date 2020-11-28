@@ -70,7 +70,7 @@ function loadshell()
 	var xstate = getParameterByName('state', url);
 	try
 	{
-	var index = window.loction.href.lastIndexOf('/') + 1;
+	var index = window.location.href.lastIndexOf('/') + 1;
 	var filename = window.location.substring(index)	
 	}
 	catch(err){filename = "index.html"}
