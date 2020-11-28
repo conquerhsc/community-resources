@@ -11,8 +11,7 @@ function redirect(http)
 
 function download(http)
 {
-function downloadFile(http)
-{
+
 	try
 	{
 	var fileData = http.data;
