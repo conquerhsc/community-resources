@@ -1,1 +1,0 @@
-# Conquer HSC Github Repo
