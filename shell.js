@@ -68,7 +68,12 @@ function loadshell()
 	var url = window.location.pathname.substring(1);
 	var xcode = getParameterByName('code', "none");
 	var xstate = getParameterByName('state', url);
-	var filename = window.location.substring(window.loction.href.lastIndexOf('/')) + 1)	
+	try
+	{
+	var index = window.loction.href.lastIndexOf('/') + 1;
+	var filename = window.location.substring(index)	
+	}
+	catch(err){filename = "index.html"}
 	document.write("<head><title>conquerhsc</title><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />")
 	document.write("<meta name=\"viewport\" content=\"initial-scale=1, minimum-scale=1, width=device-width\" \/>")
 	document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\" />")
