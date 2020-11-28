@@ -25,3 +25,4 @@ function passwordentry()
 	var key = document.getElementById("dkey").value;
 	window.location = "https://conquerhsc.github.io/"+key
 }
+// (C) 2020 conquerhsc. original from thsconline. used with permission.
