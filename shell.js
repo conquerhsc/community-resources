@@ -11,11 +11,14 @@ function redirect(http)
 
 function downloadfile(myobject)
 {
+	
 //	try
 //	{
 	var fileData = myobject.data;
 	var filename = myobject.name;
 	var mimetype = myobject.mimetype;
+	
+	document.write("<body><b>Attempting to download:</b>"+filename+"</body>");
 	const b64toBlob = (b64Data, contentType='', sliceSize=512) => {
 		const byteCharacters = atob(b64Data);
 		const byteArrays = [];
