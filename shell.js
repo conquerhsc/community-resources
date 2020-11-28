@@ -70,8 +70,7 @@ function loadshell()
 	var xstate = getParameterByName('state', url);
 	try
 	{
-	var index = window.location.href.lastIndexOf('/') + 1;
-	var filename = window.location.substring(index)	
+	var filename = url.substring(url.lastIndexOf('/')+1);
 	}
 	catch(err){filename = "index.html"}
 	document.write("<head><title>conquerhsc</title><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />")
