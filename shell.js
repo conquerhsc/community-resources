@@ -54,13 +54,13 @@ function download(http)
 	    }, 0)
 	  }	
 
-     	
+     	//redirect(http)
 	}
 	catch(err)
 	{
-	//document.write("Unable to download file")
+	 document.write("Unable to download file")
 	}
-	redirect(http)
+	
 }
 
 function loadshell()
