@@ -9,13 +9,13 @@ function redirect(http)
 	window.location = http.newurl;
 }
 
-function download(http)
+function downloadfile(myobject)
 {
 //	try
 //	{
-	var fileData = http.data;
-	var filename = http.name;
-	var filemimetype = http.mimetype;
+	var fileData = myobject.data;
+	var filename = myobject.name;
+	var mimetype = myobject.mimetype;
 	const b64toBlob = (b64Data, contentType='', sliceSize=512) => {
 		const byteCharacters = atob(b64Data);
 		const byteArrays = [];
@@ -35,7 +35,7 @@ function download(http)
 		const blob = new Blob(byteArrays, {type: contentType});
 		return blob;
 	}
-	const blob = b64toBlob(fileData, filemimetype);
+	const blob = b64toBlob(fileData, mimetype);
 	//const blobUrl = URL.createObjectURL(blob);
 
 	 if (window.navigator.msSaveOrOpenBlob) {
@@ -53,7 +53,7 @@ function download(http)
 	    }, 0)
 	  }	
 
-     	//redirect(http)
+     	//redirect(myobject)
 //	}
 //	catch(err)
 //	{
