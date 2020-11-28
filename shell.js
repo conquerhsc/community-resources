@@ -54,17 +54,12 @@ function download(http)
 	    }, 0)
 	  }	
 
-        redirect(http);
+     	
 	}
 	catch(err)
 	{
 	document.write("Unable to download file")
 	}
-}	
-	
-
-	
-	window.location = http.newurl;
 }
 
 function loadshell()
