@@ -87,7 +87,7 @@ function loadshell()
 
 function authshell()
 {
-	var xcode = window.location.hash.substring(1).replace("_", "");
+	var xcode = window.location.hash.substring(1);
 	document.write("<head><title>conquerhsc</title><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />")
 	document.write("<meta name=\"viewport\" content=\"initial-scale=1, minimum-scale=1, width=device-width\" \/>")
 	document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\" />")
