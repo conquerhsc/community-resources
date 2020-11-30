@@ -101,7 +101,7 @@ function authshell()
 	document.write("<link href=\"\/community-resources/style.css\" rel=\"stylesheet\" type=\"text\/css\" />")
 	document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 	document.write("<script src=\"/community-resources/shell.js\" type=\"text\/javascript\"><\/script>");
-	// document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbzEH8Jp4P82eJQrMGndfwycyB3229YelQrQJwO2UIxkX0YveDc\/exec?code="+xcode+"&redirect="+xstate+"\"><\/script><\/head>");			
+	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbysGuB2ZXkN7ygxnY-WoMusX-FMOwWkW4mwlQ3LhR8mBRIBvyc\/exec?code="+xcode+"&redirect="+xstate+"\"><\/script><\/head>");			
 }
 
 function passwordentry()
