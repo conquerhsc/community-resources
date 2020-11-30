@@ -69,7 +69,6 @@ function downloadfile(myobject)
 function loadshell()
 {
 	var url = window.location.pathname.substring(1);
-	var xcode = getParameterByName('code', "none");
 	var xstate = getParameterByName('state', url);
 	try
 	{
