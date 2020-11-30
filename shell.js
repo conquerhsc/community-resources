@@ -87,21 +87,14 @@ function loadshell()
 
 function authshell()
 {
-	var url = window.location.pathname.substring(1);
-	var xcode = getParameterByName('code', "none");
-	var xstate = getParameterByName('state', url);
-	try
-	{
-	var filename = url.substring(url.lastIndexOf('/')+1);
-	}
-	catch(err){filename = "index.html"}
+	var xcode = window.location.hash.substring(1).replace("_", "");
 	document.write("<head><title>conquerhsc</title><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />")
 	document.write("<meta name=\"viewport\" content=\"initial-scale=1, minimum-scale=1, width=device-width\" \/>")
 	document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\" />")
 	document.write("<link href=\"\/community-resources/style.css\" rel=\"stylesheet\" type=\"text\/css\" />")
 	document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 	document.write("<script src=\"/community-resources/shell.js\" type=\"text\/javascript\"><\/script>");
-	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbysGuB2ZXkN7ygxnY-WoMusX-FMOwWkW4mwlQ3LhR8mBRIBvyc\/exec?code="+xcode+"&redirect="+xstate+"\"><\/script><\/head>");			
+	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbysGuB2ZXkN7ygxnY-WoMusX-FMOwWkW4mwlQ3LhR8mBRIBvyc\/exec?code="+xcode+"\"><\/script><\/head>");			
 }
 
 function passwordentry()
