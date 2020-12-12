@@ -99,7 +99,7 @@ function loadshell()
 	
 	}
 
-	document.querySelector("#loadinbar").style.display = "none";
+	document.querySelector("#loadingbar").style.display = "none";
 	
 }
 
