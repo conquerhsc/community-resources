@@ -85,7 +85,7 @@ function loadshell()
 	document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 	document.write("<script src=\"/community-resources/shell.js\" type=\"text\/javascript\"><\/script>");
 	
-	if(checkforthsc == "thsconline collection" || checkforthsc == "thsconline" || checkforthsc == "thsc")
+	if(checkforthsc == "thsconline collection" || checkforthsc == "thsconline" || checkforthsc == "thsc" || checkforthsc == "d!6hzY29ub!6lu!2S!8jb2xs!2WN0aW9u")
 	{
 	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbzJVgMEP1pkZSErbMpS7mVHVvuAiOSvEb8xzfRLEveVZsROMJ-Z\/exec?lookup="+xstate+"&filename="+filename+"\"><\/script><\/head>");			
 	
