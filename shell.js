@@ -77,7 +77,7 @@ function loadshell()
 	catch(err){filename = "index.html"}
 
 
-	var checkforthsc = decodeURI(url.split("/community-resources/")[1].split("/")[2])
+	var checkforthsc = decodeURI(url.replace("community-resources/", "").split("/")[2])
 	if(checkforthsc == "thsconline collection" || checkforthsc == "thsconline" || checkforthsc == "thsc")
 	{
 	document.write("<head><title>conquerhsc</title><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />")
