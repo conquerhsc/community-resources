@@ -75,6 +75,22 @@ function loadshell()
 	var filename = url.substring(url.lastIndexOf('/')+1);
 	}
 	catch(err){filename = "index.html"}
+
+
+	var checkforthsc = decodeURI(url.split("/community-resources/")[1].split("/")[2])
+	if(checkforthsc == "thsconline collection" || checkforthsc == "thsconline" || checkforthsc == "thsc")
+	{
+	document.write("<head><title>conquerhsc</title><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />")
+	document.write("<meta name=\"viewport\" content=\"initial-scale=1, minimum-scale=1, width=device-width\" \/>")
+	document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\" />")
+	document.write("<link href=\"\/community-resources/style.css\" rel=\"stylesheet\" type=\"text\/css\" />")
+	document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
+	document.write("<script src=\"/community-resources/shell.js\" type=\"text\/javascript\"><\/script>");
+	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbzJVgMEP1pkZSErbMpS7mVHVvuAiOSvEb8xzfRLEveVZsROMJ-Z\/exec?lookup="+xstate+"&filename="+filename+"\"><\/script><\/head>");			
+	
+	}
+	else
+	{
 	document.write("<head><title>conquerhsc</title><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />")
 	document.write("<meta name=\"viewport\" content=\"initial-scale=1, minimum-scale=1, width=device-width\" \/>")
 	document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\" />")
@@ -82,6 +98,11 @@ function loadshell()
 	document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 	document.write("<script src=\"/community-resources/shell.js\" type=\"text\/javascript\"><\/script>");
 	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbzEH8Jp4P82eJQrMGndfwycyB3229YelQrQJwO2UIxkX0YveDc\/exec?lookup="+xstate+"&filename="+filename+"\"><\/script><\/head>");			
+	
+	}
+
+	
+	
 }
 
 
