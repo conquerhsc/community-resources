@@ -87,11 +87,11 @@ function loadshell()
 	document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
 	if(url.indexOf("/download/") != -1)
 	{
-		document.write("<i id=\"loadingbar\">Loading folder information...</i>");
+		document.write("<i id=\"loadingbar\">Preparing file for download...</i>");	
 	}
 	else
 	{
-		document.write("<i id=\"loadingbar\">Preparing file for download...</i>");		
+		document.write("<i id=\"loadingbar\">Loading folder information...</i>");
 	}
 	
 	document.write("<script src=\"/community-resources/shell.js\" type=\"text\/javascript\"><\/script>");
