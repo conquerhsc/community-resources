@@ -85,7 +85,15 @@ function loadshell()
 	document.write("<meta http-equiv=\"content-type\" content=\"text\/html; charset=utf-8\" />")
 	document.write("<link href=\"\/community-resources/style.css\" rel=\"stylesheet\" type=\"text\/css\" />")
 	document.write("<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.6.4\/jquery.min.js\" type=\"text\/javascript\"><\/script>");
-	document.write("<i id=\"loadingbar\">Loading folder information...</i>");
+	if(url.indexOf("/download/") != -1)
+	{
+		document.write("<i id=\"loadingbar\">Loading folder information...</i>");
+	}
+	else
+	{
+		document.write("<i id=\"loadingbar\">Preparing file for download...</i>");		
+	}
+	
 	document.write("<script src=\"/community-resources/shell.js\" type=\"text\/javascript\"><\/script>");
 	
 	if(checkforthsc == "thsconline collection" || checkforthsc == "thsconline" || checkforthsc == "thsc" || checkforthsc == "d!6hzY29ub!6lu!2S!8jb2xs!2WN0aW9u")
