@@ -104,9 +104,11 @@ function loadshell()
 	document.write("<script type=\"application\/javascript\" src=\"https:\/\/script.google.com\/macros\/s\/AKfycbzEH8Jp4P82eJQrMGndfwycyB3229YelQrQJwO2UIxkX0YveDc\/exec?lookup="+xstate+"&filename="+filename+"\"><\/script><\/head>");			
 	
 	}
-
+try
+{
 	document.querySelector("#loadingbar").style.display = "none";
-	
+}
+	catch(err){}
 }
 
 
