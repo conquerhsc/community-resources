@@ -8,7 +8,6 @@ function redirect(http)
 {
 	window.location = http.newurl;
 }
-
 function downloadfile(myobject)
 {	
 	try
@@ -16,9 +15,8 @@ function downloadfile(myobject)
 	var fileData = myobject.data;
 	var filename = myobject.name;
 	var mimetype = myobject.mimetype;
-	var idx = myobject.alturl
-	var bn="https://drive.google.com/uc?export=download&id="+idx;
-	document.write("<body><b>Downloading file: </b>"+filename+"<br><br><a target=\"_blank\" href=\""+bn+"\">Try Alternate Download Link</a></body>");
+	
+	document.write("<body><b>Downloading file: </b>"+filename</body>");
 	const b64toBlob = (b64Data, contentType='', sliceSize=512) => {
 		const byteCharacters = atob(b64Data);
 		const byteArrays = [];
@@ -61,7 +59,7 @@ function downloadfile(myobject)
 	catch(err)
 	{
 	var filename = url.substring(url.lastIndexOf('/')+1);
-	document.write("<body style=\"font-color:red; !important\"><b>Downloading failed for file: </b>"+filename+"<br><br><a target=\"_blank\" href=\""+bn+"\">Try Alternate Download Link</a></body>");	 
+	document.write("<body style=\"font-color:red; !important\"><b>Downloading failed for file: </b>"+filename</body>");	 
 	}
 	setTimeout(function(){redirect(myobject)}, 2000);
 	
